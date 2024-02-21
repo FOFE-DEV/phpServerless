@@ -11,7 +11,7 @@ class CustomCron implements \Bref\Event\Handler
         echo 'Hello  world';
         DB::table('Persons')->insert([
             'LastName' => now(),
-            'FirstName' => 'fofe ',
+            'FirstName' => 'fofe ainix ',
             'Address' => 'ngaoundere',
             'City' => 'foumbot',
         ]);

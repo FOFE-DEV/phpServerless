@@ -3,7 +3,7 @@ name: Deploy lamda
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     name: deploy
