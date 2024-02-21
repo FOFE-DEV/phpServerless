@@ -8,15 +8,12 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18]
+
     steps:
       - uses: actions/checkout@v2
-      - name: use Nodes ${{matrix.node-version }}
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
       - run: npm install serverless-bref-plugin
       - name: serverless deploy
         uses: serverless/github-action@master
