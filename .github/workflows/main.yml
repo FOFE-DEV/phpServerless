@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
       - name: install bref
-        uses: teeps-co/composer-action@v1
+      - uses: teeps-co/composer-action@v1
         with:
           suggest: yes
           dev: no
