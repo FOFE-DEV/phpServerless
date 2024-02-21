@@ -14,13 +14,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: install bref
-      - uses: teeps-co/composer-action@v1
-        with:
-          suggest: yes
-          dev: no
-          args: --profile --ignore-platform-reqs
-        run: composer require bref/bref
       - name: serverless deploy
         uses: serverless/github-action@master
         with:
